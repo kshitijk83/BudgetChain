@@ -1,0 +1,37 @@
+{
+  "name": "budgetchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kshitijk83/BudgetChain.git"
+  },
+  "author": "kshitiz kuamr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kshitijk83/BudgetChain/issues"
+  },
+  "homepage": "https://github.com/kshitijk83/BudgetChain#readme",
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "ganache-cli": "^6.9.0",
+    "next": "^9.2.1",
+    "next-routes": "^1.4.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.2",
+    "solc": "^0.6.2",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.2.5"
+  },
+  "devDependencies": {
+    "prettier": "1.19.1"
+  }
+}
