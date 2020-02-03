@@ -19,6 +19,10 @@ contract Budget{
     function sendEth(uint256 index) payable public{
         clubs[index].transfer(msg.value);
     }
+    
+    function getAllClubs() view public returns(address payable[] memory _clubs){
+        _clubs = clubs;
+    }
 }
 
 // club
