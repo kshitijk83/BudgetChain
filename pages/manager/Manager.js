@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card } from "semantic-ui-react";
+import { Button, Card, Grid, Label, Header } from "semantic-ui-react";
 import Layout from "../../components/Layout";
 import { Link } from "../../routes";
 import manager from "../../ethereum/manager";
@@ -10,17 +10,29 @@ const Manager = props => {
         return {
             header: "Club Address",
             description: item,
-            style: { overflowWrap: "break-word" }
+            style: { overflowWrap: "break-word" },
+            href: `/manager/club/${item}?index=${i}`
         };
     });
-    // console.log(clubsComponent);
+
     return (
         <Layout>
-            <Link route="/manager/createClub">
-                <Button>Create Club</Button>
-            </Link>
-            Manager: {props.budgetManager}
-            <Card.Group items={clubsComponent} />
+            <Grid columns={2} style={{ margin: "3rem 0" }}>
+                <Grid.Row>
+                    <Grid.Column>
+                        <Card.Group items={clubsComponent} />
+                    </Grid.Column>
+                    <Grid.Column>
+                        <Header as="h4">Manager Address:</Header>
+                        {props.budgetManager}
+                        <Link route="/manager/createClub">
+                            <Button style={{ margin: "1rem 0" }} fluid primary>
+                                Create Club
+                            </Button>
+                        </Link>
+                    </Grid.Column>
+                </Grid.Row>
+            </Grid>
         </Layout>
     );
 };
