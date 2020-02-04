@@ -84,7 +84,6 @@ Club.getInitialProps = async props => {
     const clubIndex = +props.query.index;
     const clubs = Clubs(clubAddress);
     const balance = await clubs.methods.getBalance().call();
-    console.log(balance);
     return { clubAddress, balance, clubIndex };
 };
 

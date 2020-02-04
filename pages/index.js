@@ -34,7 +34,7 @@ const App = props => {
                         </Link>
                     </Grid.Column>
                     <Grid.Column>
-                        <Link route="/clubs">
+                        <Link route="/club">
                             <Card>
                                 <Card.Content>
                                     <Card.Header>Clubs panel</Card.Header>
