@@ -24,10 +24,6 @@ A simple solution would be that Budget manager transfer the Ether to Clubs contr
 <img src="ss/3.png" width="100%">
 
 ---
-<img src="ss/4.png" width="100%">
-
----
-<img src="ss/5.png" width="100%">
 
 # Tech-Used
 - Nextjs
