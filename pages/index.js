@@ -1,7 +1,9 @@
 import React from "react";
-import { Grid, Card } from "semantic-ui-react";
+import { Grid, Card, Image } from "semantic-ui-react";
 import { Link } from "../routes";
 import Layout from "../components/Layout";
+// import managerImg from "../images/manager.png";
+// import clubImg from "../images/club.png";
 
 const items = [
     {
@@ -23,6 +25,7 @@ const App = props => {
                     <Grid.Column>
                         <Link route="/manager">
                             <Card>
+                                {/* <Image src={managerImg} wrapped ui={false} /> */}
                                 <Card.Content>
                                     <Card.Header>Manager panel</Card.Header>
                                     <Card.Description>
@@ -36,6 +39,7 @@ const App = props => {
                     <Grid.Column>
                         <Link route="/club">
                             <Card>
+                                {/* <Image src={clubImg} wrapped ui={false} /> */}
                                 <Card.Content>
                                     <Card.Header>Clubs panel</Card.Header>
                                     <Card.Description>

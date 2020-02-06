@@ -33,15 +33,19 @@ const ClubDetails = props => {
                 <Table.Cell>{item._orderName}</Table.Cell>
                 <Table.Cell>{item._orderAmount}</Table.Cell>
                 <Table.Cell center="true" aligned="true">
-                    <Button
-                        loading={loading}
-                        disabled={item._paid}
-                        onClick={() => payHandler(item._venderAddress, i)}
-                        primary
-                        type="submit"
-                    >
-                        {item._paid ? "Paid" : "Pay"}
-                    </Button>
+                    {item._accepted ? (
+                        <Button
+                            loading={loading}
+                            disabled={item._paid}
+                            onClick={() => payHandler(item._venderAddress, i)}
+                            primary
+                            type="submit"
+                        >
+                            {item._paid ? "Paid" : "Pay"}
+                        </Button>
+                    ) : (
+                        "manager persmission required"
+                    )}
                 </Table.Cell>
             </Table.Row>
         );
